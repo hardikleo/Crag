@@ -197,14 +197,14 @@ load_dotenv()
 
 if __name__ == "__main__":
     st.set_page_config(page_title="GameSage AI")
-    set_background("crag/crag/final_bg_blurred_more.png")
+    set_background("crag/crag/original_gamesage_logo.svg")
 
     svg_logo_path = "original_gamesage_logo.svg"
     svg_content = get_svg_content(svg_logo_path)
     col1, col2 = st.columns([2, 10])
     with col1:
         if svg_content:
-            st.image("original_gamesage_logo.svg", width=120)
+            st.image("crag/crag/original_gamesage_logo.svg", width=120)
     with col2:
         st.title("𝙶𝚊𝚖𝚎𝚂𝚊g𝚎 𝙰𝙸 ◔_◔")
     st.divider()
